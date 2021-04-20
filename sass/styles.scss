@@ -1,0 +1,68 @@
+// Modules and Variables
+@import "partials/fonts";
+@import "partials/color";
+@import "partials/base";
+@import "../css/styles.css";
+
+
+body{margin: 0; padding: 0; font-family: $Mon; display: flex;
+}
+
+.btn-secondary{background: rgba(19, 110, 247, 0.2); border: rgba(19, 110, 247, 0.2); color: $secondary;}
+.btn-outline-green{border: 1px solid rgba(16, 35, 40, 0.1); color: $primary; width: 150px;}
+
+.bg-bluelight{background-color: $blue-light;}
+
+nav{width: 256px; height: 100vh; background-color: $green-Op90; color: $white; padding: 32px 0 0 32px; position: relative;
+    ul{list-style: none;
+        li{width: 200px; }
+    }
+    a{text-decoration: none; color: rgba($green-light, 0.6); padding: 8px; font-size: 1rem; display: block;
+     &.active{
+         background-color: rgba(#547178, $alpha: .5); color: $white; font-weight: 600; border-radius: 4px;
+     }
+     &:hover{color: $white;}
+    }
+    .nav__user-profile{width: 32px; height: 32px; border-radius: 50%; overflow: hidden;
+        >img{width: 100%;}
+    }
+
+    &:before{content: ""; height: 1px; width: 100%; position: absolute; left: 0; top: 550px; background-color: #547178;}
+}
+
+a, .btn{font-family: $OpenSans; letter-spacing: .3px!important;}
+
+main{width: calc(100% - 256px); padding: 72px 32px 0 32px;
+
+}
+
+.cardsCrypto-content{
+    .icon-crypto{max-width: 32px; max-height: 32px;
+        >img{width: 100%;}
+    }
+    h5{font-weight: 700; color: $primary;}
+    h6{color: rgba($color: $primary, $alpha: 0.7);}
+    h5,h6{margin: 0;}
+
+    .card{
+        &.card__crypto{background-color: $blue-light; border: none; box-shadow: 0px 1px 1px rgba(82, 113, 121, 0.37), 0px 2px 1px rgba(82, 113, 121, 0.06), 0px 1px 3px rgba(82, 113, 121, 0.11);}
+        .card-body{
+            .btn{min-width: 95px;}
+        }
+    }
+}
+
+.veryfication, .table-limit{border: 1px solid rgba(16, 35, 40, 0.1); border-radius: 4px;
+    h5{font-size: 1.1rem; color: $gray-text; font-weight: normal; margin: 0;}
+    .btn-link{color: $secondary; text-decoration: none!important; font-weight: 600;}
+}
+
+.veryfication{
+    .icon{opacity: .3;}
+}
+
+.table-limit{
+    h5{font-size: 1.2rem; font-weight: 600;}
+    hr{color:rgba(16, 35, 40, 0.3);}
+    span{color: $gray-text;}
+}
